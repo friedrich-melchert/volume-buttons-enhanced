@@ -59,9 +59,16 @@ public class VolumeButtonsPlugin extends Plugin {
                             @Override
                             public boolean onKey(View v, int keyCode, android.view.KeyEvent event) {
                                 boolean isKeyUp = event.getAction() == KeyEvent.ACTION_UP;
+                                boolean isKeyDown = event.getAction() == KeyEvent.ACTION_DOWN;
+                                boolean isKeyRepeat = event.getRepeatCount() > 0;
                                 JSObject ret = new JSObject();
 
-                                if (isKeyUp) {
+                                if ( isKeyUp ) {
+                                    ret.put("event", "keyUp");
+                                } else if ( isKeyDown ) {
+                                    ret.put("event", isKeyRepeat ? "keyRepeat" : "keyDown");
+                                }
+                                if (isKeyUp || isKeyDown) {
                                     if (keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
                                         ret.put("direction", "up");
                                         call.resolve(ret);
@@ -72,6 +79,7 @@ public class VolumeButtonsPlugin extends Plugin {
                                         return true;
                                     }
                                 }
+
 
                                 // NOTE: we return suppressVolumeIndicator value for any event actions but KeyEvent.ACTION_UP (which is handled above)
                                 // therefore, when suppressVolumeIndicator is true, for a key event that typically controls the system volume,
