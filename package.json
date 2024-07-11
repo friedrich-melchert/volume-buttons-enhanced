@@ -1,5 +1,5 @@
 {
-  "name": "@capacitor-community/volume-buttons",
+  "name": "@freidrich-melchert/volume-buttons-enhanced",
   "version": "6.0.0",
   "description": "Capacitor Volume Buttons. The plugin enables to listen to hardware volume button presses",
   "main": "dist/plugin.cjs.js",
