@@ -1,6 +1,6 @@
 {
   "name": "@freidrich-melchert/volume-buttons-enhanced",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "Capacitor Volume Buttons. The plugin enables to listen to hardware volume button presses",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -26,10 +26,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/capacitor-community/volume-buttons.git"
+    "url": "git+https://github.com/friedrich-melchert/volume-buttons-enhanced.git"
   },
   "bugs": {
-    "url": "https://github.com/capacitor-community/volume-buttons/issues"
+    "url": "https://github.com/friedrich-melchert/volume-buttons-enhanced/issues"
   },
   "keywords": [
     "capacitor",
