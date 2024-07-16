@@ -13,7 +13,7 @@
  */
 
 
-package com.ryltsov.alex.plugins.volume.buttons;
+package com.spectelligence.capacitor.plugins.volume.buttons;
 
 import android.view.KeyEvent;
 import android.view.View;
