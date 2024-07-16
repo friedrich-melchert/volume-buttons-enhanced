@@ -9,6 +9,9 @@
  *
  * 2. Modifications made by Alex Ryltsov to the original code:
  *    - changed to use watchVolume/clearWatch plugin methods instead of the load method to setup/tear down the hardware volume buttons events listener
+ * 
+ * 3. Modifications made by Friedrich Melchert to the above code:
+ *    - added support for long press events on the volume buttons (only for android so far)
  *
  */
 

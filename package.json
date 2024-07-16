@@ -1,6 +1,6 @@
 {
   "name": "@friedrich-melchert/volume-buttons-enhanced",
-  "version": "6.0.5",
+  "version": "6.0.6",
   "description": "Capacitor Volume Buttons. The plugin enables to listen to hardware volume button presses",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -14,10 +14,14 @@
     "CapacitorCommunityVolumeButtons.podspec"
   ],
   "author": {
-    "name": "Alex Ryltsov",
-    "email": "ryltsov.alex@gmail.com"
+    "name": "Friedrich Melchert",
+    "email": "melchert@spectelligence.com"
   },
   "contributors": [
+    {
+      "name": "Friedrich Melchert",
+      "email": "melchert@spectelligence.com"
+    },
     {
       "name": "Alex Ryltsov",
       "email": "ryltsov.alex@gmail.com"
